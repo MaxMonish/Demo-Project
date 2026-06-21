@@ -3,7 +3,6 @@ require("dotenv").config();
 const express = require("express");
 const http = require("http");
 const cookieParser = require("cookie-parser");
-const cors = require("cors");
 const {Server} = require("socket.io");
 const path = require("path");
 
@@ -27,15 +26,6 @@ const Chat = require("./src/models/Chat");
 const app = express();
 
 const cors = require("cors");
-
-app.use(
-  cors({
-    origin: [
-      "https://agent-6a37e070f0ae0471615--silly-zuccutto-37d9b5.netlify.app/"
-    ],
-    credentials: true
-  })
-);
 
 const allowedOrigins = [
   "http://localhost:5173",
