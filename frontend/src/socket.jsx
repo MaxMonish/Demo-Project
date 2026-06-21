@@ -1,7 +1,7 @@
 import React from "react";
 import {io} from "socket.io-client";
 
-const socket = io("https://test-project-backend-production-1686.up.railway.app/", {
+const socket = io("https://demo-project-backend-v7on.onrender.com", {
   autoConnect: true,
   transports: ["websocket"],
   withCredentials: true
