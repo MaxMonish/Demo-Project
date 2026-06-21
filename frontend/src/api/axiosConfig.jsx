@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 
-const axiosInstance = axios.create({baseURL: "https://test-project-backend-production-1686.up.railway.app/"});
+const axiosInstance = axios.create({baseURL: "https://demo-project-backend-v7on.onrender.com"});
 
 axiosInstance.interceptors.request.use((config) => {
     const token = localStorage.getItem("token");
